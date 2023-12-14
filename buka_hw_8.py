@@ -46,16 +46,11 @@ for id,info in inter:
     
     a={'id':id,'name':info[0],'age':info[1],'number':info[2]}
     list.append(a)
-
-    
+   
 with open('exel.csv','w',newline='') as file:
     stroki=['id','name','age','number']
     writer=csv.DictWriter(file,fieldnames=stroki)
     writer.writeheader()
     writer.writerows(list)
-
-
-
-
-    
+  
        
