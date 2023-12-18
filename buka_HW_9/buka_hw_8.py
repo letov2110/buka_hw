@@ -11,16 +11,16 @@ import json, csv
 
 ############# zadanie 2
 
-# st_1=input()
-# st_2=input()
-# st_3=input()
-# st_4=input()
-# f=open('text_hw.txt','w')
-# f.write(f'{st_1}\n{st_2}\n')
-# f.close()
-# f=open('text_hw.txt','a')
-# f.write(f'{st_3}\n{st_4}')
-# f.close()
+st_1 = input()
+st_2 = input()
+st_3 = input()
+st_4 = input()
+f = open("text_hw.txt", "w")
+f.write(f"{st_1}\n{st_2}\n")
+f.close()
+f = open("text_hw.txt", "a")
+f.write(f"{st_3}\n{st_4}")
+f.close()
 
 ########### zadanie 3/4
 
@@ -53,4 +53,3 @@ with open("exel.csv", "w", newline="") as file:
     writer = csv.DictWriter(file, fieldnames=stroki)
     writer.writeheader()
     writer.writerows(list)
-
