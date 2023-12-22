@@ -111,10 +111,10 @@ a = circle_1.sravn(circle_2)
 if isinstance(a, Point):
     print(
         f"радиусы окружностей {circle_1.radius} и {circle_2.radius} равны\n"
-        f"реультатом будет точка с координатами х={a.x} у={a.y}"
+        f"реультатом будет точка с координатами х={circle_1.x-circle_2.x} у={circle_1.y-circle_2.y}"
     )
 else:
     print(
         f"радуы окружнстей {circle_2.radius} и {circle_1.radius} неравны\n"
-        f"результатм будет окружность с точками x={a.x} y={a.y}  и радиусом {a.radius}"
+        f"результатм будет окружность с точками x={circle_1.x-circle_2.x} y={circle_1.y-circle_2.y}  и радиусом {a.radius}"
     )
