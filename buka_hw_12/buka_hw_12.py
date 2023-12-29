@@ -1,4 +1,4 @@
-#### 1
+# #### 1
 class CardDeck:
     def __init__(self):
         self.length = 52
@@ -25,4 +25,13 @@ class CardDeck:
 deck = CardDeck()
 for card in deck:
     print(card)
-####### 2
+# ####### 2
+
+def fib(n):
+    f1, f2 = 0, 1
+    for __ in range(n):
+        yield f1
+        f1, f2 = f2, f1 + f2
+
+
+print(list(fib(int(input("введите число ")))))
